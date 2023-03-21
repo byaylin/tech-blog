@@ -5,7 +5,7 @@ document.querySelector("#loginForm").addEventListener("submit", e=>{
         password: document.querySelector("#loginPassword").value
     }
     console.log(loginObj)
-    fetch("/api/users/login",{
+    fetch("/login",{
         method: "POST",
         body: JSON.stringify(loginObj),
         headers: {

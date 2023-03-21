@@ -4,14 +4,20 @@
     box-sizing: border-box;
     font-family: Helvetica, sans-serif;
     font-size: 14px;
-    background-color: #BFD7EA;
+    background-color: #98A6D4;
+    color: #44344F;
   }
   
   body {
     display: flex;
     flex-direction: column;
   }
-  
+
+  h1{
+    font-size:xx-large;
+    padding:10px;
+  }
+
   header {
     display: flex;
     flex-direction: column;
@@ -31,7 +37,6 @@
   }
 
   main {
-   
     top: 10vh;
     width: 100%;
     min-height: 80vh;
@@ -54,6 +59,7 @@
     align-items: center;
     padding: 10px;
     border-radius: 25px;
+    background-color: #D3FCD5;
   }
   
   button {
@@ -61,7 +67,9 @@
     padding: 5px;
     width: 30vh;
     border: none;
+    color: white;
     font-weight: bold;
+    background-color:#44344F;
   }
   
   .row {
