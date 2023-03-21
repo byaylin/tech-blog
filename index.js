@@ -1,3 +1,4 @@
+const dotenv = require('dotenv').config()
 const express= require('express');
 const session= require('express-session');
 const exphbs= require('express-handlebars');
@@ -20,6 +21,7 @@ const sess = {
       db: sequelize
   })
 };
+
 app.use(session(sess));
 
 app.use(express.json());

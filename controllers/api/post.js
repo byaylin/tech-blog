@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const { User,Post } = require('../models');
+const { User,Post } = require('../../models');
 
 router.get("/",(req,res) => {
   Post.findAll().then(postData => {
@@ -45,7 +45,7 @@ router.delete("/:id",(req,res) => {
   console.log(req.body);
   Post.findByPk(req.params.id).then(postData => {
     if(!postData) {
-      return res.status(404).json({msg:"hmmm... that post doe not exist"})
+      return res.status(404).json({msg:"hmmm... that post does not exist"})
     } else if(postData.UserId !== req.session.userId) {
       return res.status(403).json({msg:"oops not your post"})
     }

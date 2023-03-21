@@ -1,8 +1,7 @@
 const express = require('express');
 const router = express.Router();
-const { User,Post } = require('../models');
+const { User,Post } = require('../../models');
 const bcrypt = require("bcrypt");
-//const saltRounds = 10;
 
 router.get("/", (req,res) => {
   User.findAll().then(userData => {
