@@ -18,6 +18,10 @@
     padding:10px;
   }
 
+  h2, h3{
+    background-color: transparent;
+  }
+
   header {
     display: flex;
     flex-direction: column;
@@ -94,24 +98,27 @@
     align-items: center;
     padding: 10px;
     border-radius: 25px;
+    background-color:#D3FCD5 ;
   }
   
   #new-post-form{
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: #D3FCD5;
   }
   
   #title-input {
     width: 35vh;
     resize: vertical;
-  
+    background-color: #afe4b2;
   }
   
   #post-input {
     width: 35vh;
     height: 60vh;
     resize: vertical;
+    background-color: #afe4b2;
   }
   
   .blurb {
@@ -121,6 +128,7 @@
     width: 145vh;
     padding: 10px;
     border-radius: 25px;
+    background-color: #afe4b2;
   }
   
   .blurb h2 {
@@ -145,10 +153,14 @@
   
   #date {
     font-size: 12px;
+    background-color: #D3FCD5;
   }
-  
+  #title-post{
+    background-color: #D3FCD5;
+  }
   #text {
     padding: 10px;
+    background-color: #D3FCD5;
   }
   
   #top {
