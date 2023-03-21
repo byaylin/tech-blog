@@ -1,0 +1,15 @@
+<container id="top">
+    <h2>HOME</h2>
+    
+</container>
+
+<container class="home-blurb">
+    <h2>ALL POSTS</h2>
+   {{#each allPosts}}
+    <container class="post-box">
+        <h3>"{{title}}" by: {{User.username}}</h3>
+        <p id="text">{{post}}</p>
+    </container>
+    {{/each}} 
+</container>
+

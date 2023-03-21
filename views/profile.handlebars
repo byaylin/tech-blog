@@ -1,0 +1,30 @@
+<container>
+  <container class="row">
+    <container class="column">
+        <container class="avatar">
+        <h2>Hi, {{username}}!</h2>
+        <h3>ADD A POST</h3>
+        <form id="new-post-form">
+          <textarea id="title-input" placeholder="title"></textarea>
+          <textarea id="post-input" placeholder="post"></textarea>
+          <button>POST</button>
+        </form>
+      </container>
+    </container>
+    
+    <container class="column">
+      <container class="blurb">
+        <h2>MY POSTS</h2>
+        {{#each Posts}}
+          <container class="post-box">
+            <h3>{{title}}</h3>
+            <p id="date">{{createdAt}}</p>
+            <p id="text">{{post}}</p>
+          </container>
+        {{/each}}
+      </container>
+    </container>
+  </container>
+</container>
+
+<script src="../public/js/profile.js"></script>

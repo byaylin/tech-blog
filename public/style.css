@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica, sans-serif;
+    font-size: 14px;
+  }
+  
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  header {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    min-height: 10vh;
+    top: 0;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  header a {
+    justify-items: end;
+    padding: 10px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  a:hover {
+  }
+  
+  main {
+   
+    top: 10vh;
+    width: 100%;
+    min-height: 80vh;
+    padding: 10px;
+  }
+  
+  section {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 10vh;
+    min-height: 40vh;
+    min-width: 60;
+  }
+  
+  #loginForm, #signupForm{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px;
+    border-radius: 25px;
+  }
+  
+  button {
+    border-radius: 25px;
+    padding: 5px;
+    width: 30vh;
+    border: none;
+    font-weight: bold;
+  }
+  
+  .row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  
+  .column {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+  }
+  
+  .avatar {
+    display: flex;
+    flex-direction: column;
+    min-height: 20vh;
+    width: 40vh;
+    align-items: center;
+    padding: 10px;
+    border-radius: 25px;
+  }
+  
+  #new-post-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  #title-input {
+    width: 35vh;
+    resize: vertical;
+  
+  }
+  
+  #post-input {
+    width: 35vh;
+    height: 60vh;
+    resize: vertical;
+  }
+  
+  .blurb {
+    display: flex;
+    flex-direction: column;
+    min-height: 10vh;
+    width: 145vh;
+    padding: 10px;
+    border-radius: 25px;
+  }
+  
+  .blurb h2 {
+    text-align: center;
+  }
+  
+  .home-blurb {
+    display: flex;
+    flex-direction: column;
+    min-height: 10vh;
+    padding: 10px;
+    border-radius: 25px;
+  }
+  
+  .home-blurb h2 {
+    text-align: center;
+  }
+  
+  .post-box {
+    margin: 10px;
+  }
+  
+  #date {
+    font-size: 12px;
+  }
+  
+  #text {
+    padding: 10px;
+  }
+  
+  #top {
+    padding: 10px;
+    text-align: center;
+  }
